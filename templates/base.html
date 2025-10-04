@@ -1,13 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feeds</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>feeds</h1>
-    <div>{{user.username}} (ID: {{user.id}}) </div>
-    <a href="/users/logout/">로그아웃</a>
+    {% block content %}{% endblock content %}
 </body>
 </html>
